@@ -8,21 +8,20 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main>
-      <form class="search-form">
-        <label class="input-label-search-form" for="search-input"> </label>
-        <input
-          class="search-input-form"
-          type="text"
-          name="search"
-          id="search-input"
-          placeholder="Search images..."
-        />
-        <button class="btn-search-form" type="submit">Search</button>
-      </form>
-      <div class="loader"></div>
-      <ul class="gallery"></ul>
-    </main>
+    <div class="preloader">
+      <div class="preloader__row">
+        <p>load</p>
+        <div class="preloader__item"></div>
+        <div class="preloader__item"></div>
+      </div>
+    </div>
+    <form autocomplete="off">
+      <input type="text" placeholder="Search images..." />
+      <button type="submit" id="search">Search</button>
+    </form>
+    <ul class="gallery"></ul>
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/pixabay-api.js"></script>
+    <script type="module" src="./js/render-functions.js"></script>
   </body>
 </html>
