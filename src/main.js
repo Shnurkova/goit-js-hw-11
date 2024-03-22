@@ -18,6 +18,7 @@ const fillForm = document.querySelector('form');
 
 const preloader = document.querySelector('.preloader');
 
+
 const showLoader = () => {
   preloader.style.display = 'flex';
 };
@@ -76,5 +77,8 @@ inputBtn.addEventListener('click', async event => {
     handleLoad();
   }
 });
+
+
+
 
 
